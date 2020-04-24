@@ -1,0 +1,229 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #cecece;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("img/background.svg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("img/background.svg");
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+a:link,
+a:visited {
+    color: #bb0a30;
+}
+
+a:hover,
+a:active {
+    color: #80011d;
+}
+
+/* ############## */
+/***** HEADER *****/
+.header {
+    box-shadow: 3px 3px 3px rgba(85, 85, 85, 0.75);
+    border-radius: .25rem;
+}
+
+.header__bg-image {
+    background-image: url(img/IMG_0915.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    min-height: 40vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.header__logo {
+    width: 100px;
+    height: auto;
+    margin-left: 30px;
+    -webkit-animation: 1s pulse;
+    animation: 1s pulse;
+}
+
+.header__heading {
+    display: inline-block;
+    text-align: center;
+    font-weight: 300;
+    font-size: 200%;
+}
+
+/* NAVIGATION BAR */
+.navigation {
+    opacity: 0.9;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.navigation__item {
+    margin: 10px 10px;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+    padding: 8px 0;
+    font-size: 95%;
+    font-weight: 600;
+    color: #495057;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+    border-bottom: 2px solid #bb0a30;
+}
+
+.navigation__link--active:link,
+.navigation__link--active:visited {
+    color: #bb0a30;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.navigation__link--active:hover,
+.navigation__link--active:active {
+    color: #000000;
+    border-bottom: 2px solid transparent;
+}
+
+/* ################## */
+/***** CONTAINERS *****/
+
+.main-container {
+    min-height: 60vh;
+}
+
+.main-container--box-shadow {
+    box-shadow: 1px 3px 3px rgba(85, 85, 85, 0.75);
+}
+
+.lateral-container {
+    border: solid 1px #bb0a30;
+}
+
+/* #### */
+/* FORM */
+.form__radio-item {
+    margin-right: 1.5rem;
+}
+
+/* ############# */
+/* VISUALIZATION */
+tr.table-row {
+    cursor: pointer;
+}
+
+.msg {
+    text-align: center;
+}
+
+.msg__success {
+    border-left: 4px solid green;
+    background-color: #e9e9e9;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.msg__failure {
+    border-left: 4px solid red;
+    background-color: #e9e9e9;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+/* SLIDER */
+.slidecontainer {
+    width: 100%;
+}
+
+.filter__slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+.filter__slider:hover {
+    opacity: 1;
+}
+
+.filter__slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #bb0a30;
+    cursor: pointer;
+}
+
+.filter__slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #bb0a30;
+    cursor: pointer;
+}
+
+.filtrado-botones {
+    justify-content: space-around;
+}
+
+/* ACCIONES */
+.slider-container {
+    text-align: center;
+}
+
+/* ############# */
+/* PICTURE ALBUM */
+.album__image {
+    width: 100%;
+    height: 100%;
+}
+
+/* ###### */
+/* FOOTER */
+.footer {
+    box-shadow: 0 -2px 3px rgba(85, 85, 85, 0.5);
+    opacity: 0.8;
+}
+
+.footer__info-concesionario {
+    font-size: 95%;
+}
+
+.footer__credits {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+a.footer__link {
+    text-decoration: none;
+}
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */

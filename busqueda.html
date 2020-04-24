@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=X-UA-Compatible content="ie=edge">
+<title>Sport Motors · Búsqueda</title>
+<link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css integrity=sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T crossorigin=anonymous>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel=stylesheet>
+<link rel=stylesheet href=styles/min/animate.min.css>
+<link rel=stylesheet href=styles/min/style.min.css>
+<link rel=stylesheet href=styles/min/queries.min.css>
+<link rel=apple-touch-icon sizes=57x57 href=favicons/apple-icon-57x57.png>
+<link rel=apple-touch-icon sizes=60x60 href=favicons/apple-icon-60x60.png>
+<link rel=apple-touch-icon sizes=72x72 href=favicons/apple-icon-72x72.png>
+<link rel=apple-touch-icon sizes=76x76 href=favicons/apple-icon-76x76.png>
+<link rel=apple-touch-icon sizes=114x114 href=favicons/apple-icon-114x114.png>
+<link rel=apple-touch-icon sizes=120x120 href=favicons/apple-icon-120x120.png>
+<link rel=apple-touch-icon sizes=144x144 href=favicons/apple-icon-144x144.png>
+<link rel=apple-touch-icon sizes=152x152 href=favicons/apple-icon-152x152.png>
+<link rel=apple-touch-icon sizes=180x180 href=favicons/apple-icon-180x180.png>
+<link rel=icon type=image/png sizes=192x192 href=favicons/android-icon-192x192.png>
+<link rel=icon type=image/png sizes=32x32 href=favicons/favicon-32x32.png>
+<link rel=icon type=image/png sizes=96x96 href=favicons/favicon-96x96.png>
+<link rel=icon type=image/png sizes=16x16 href=favicons/favicon-16x16.png>
+<link rel=manifest href=favicons/manifest.json>
+<meta name=msapplication-TileColor content=#ffffff>
+<meta name=msapplication-TileImage content=favicons/ms-icon-144x144.png>
+<meta name=theme-color content=#ffffff>
+</head>
+<body>
+<header class="container mt-2">
+<div class=header>
+<div class=row>
+<div class=col>
+<div class="jumbotron mb-0 header__bg-image">
+<img src=images/min/logo-min.png alt="Logo Sport Motors" class=header__logo id=logo>
+<h1 class="text-light header__heading" id=heading>SPORT MOTORS</h1>
+</div>
+</div>
+</div>
+<nav class="row navigation">
+<div class=col>
+<ul class="nav nav-justify justify-content-center bg-light">
+<li class="nav-item navigation__item">
+<a class="nav-link active navigation__link" href=index.html>Inicio</a>
+</li>
+<li class="nav-item navigation__item">
+<a class="nav-link navigation__link" href=formulario.php>Inserción</a>
+</li>
+<li class="nav-item navigation__item">
+<a class="nav-link navigation__link" href=visualizacion.html>Visualización</a>
+</li>
+<li class="nav-item navigation__item">
+<a class="nav-link navigation__link navigation__link--active" href=busqueda.html>Búsqueda</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<article class="container main-container">
+<div class="main-container__search my-4 p-3 bg-light rounded animated fadeInLeft main-container--box-shadow">
+<h2 class=text-center>Búsqueda de coches</h2>
+<section class=row>
+<div class="col my-2">
+<div class=table-responsive id=busqueda-coche>
+<form name=formulario-busqueda-coche>
+<div class=form-group>
+<label for=busqueda_marca>Marca</label>
+<select name=marca id=busqueda_marca class=form-control>
+<option value=*>Introduce la marca</option>
+</select>
+<small class="form-text text-muted">Este campo es obligatorio para efectuar la búsqueda de todos los coches de esa marca</small>
+</div>
+<div class=form-group>
+<label for=busqueda_modelo>Modelo</label>
+<select name=modelo id=busqueda_modelo class=form-control>
+<option value=*>Introduce el modelo</option>
+</select>
+<small class="form-text text-muted">Este campo es opcional, puedes dejarlo en blanco o introducir un asterisco (*) para buscar todos los modelos de una marca</small>
+</div>
+<div class=text-center>
+<input type=button onclick=busquedaCoche() value=Buscar class="btn btn-secondary">
+</div>
+</form>
+</div>
+<div class=text-center id=boton-atras>
+</div>
+</div>
+</section>
+</div>
+</article>
+<footer class=container-fluid>
+<div class=row>
+<div class="col-md mt-3 p-0">
+<div class="footer bg-light p-4 text-center">
+<span class=footer__info-concesionario id=info-concesionario></span>
+<div class=footer__credits>
+&copy; <span id=year></span> | Hecho por <a class=footer__link href=https://github.com/Alvhix>@Alvhix</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous></script>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js integrity=sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 crossorigin=anonymous></script>
+<script src=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js integrity=sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM crossorigin=anonymous></script>
+<script src=scripts/min/script.min.js></script>
+<script src=scripts/min/jquery.min.js></script>
+</body>
+</html>
