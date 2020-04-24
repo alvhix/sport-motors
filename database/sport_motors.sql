@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-02-2020 a las 00:12:33
+-- Tiempo de generación: 24-04-2020 a las 02:32:43
 -- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.4.1
+-- Versión de PHP: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,8 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `concesionario`
+-- Base de datos: `sport_motors`
 --
+CREATE DATABASE IF NOT EXISTS `sport_motors` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `sport_motors`;
 
 -- --------------------------------------------------------
 
